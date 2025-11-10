@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Badeen+Display&family=Blaka+Ink&family=Cairo+Play:wght@200..1000&family=Changa:wght@200..800&family=Lalezar&family=Lemonada:wght@300..700&family=Libertinus+Keyboard&family=Momo+Signature&family=Noto+Nastaliq+Urdu:wght@400..700&family=Playpen+Sans+Arabic:wght@100..800&family=Playwrite+MX+Guides&family=Qahiri&family=Rakkas&family=Warnes&display=swap');
+
+:root{
+	--bacground-color:#1f1f1f;
+	--font-color:#eaecff;
+	--top-screen-color:#acacac;
+	--top-screen-color-font:#1b1a1a;
+	/*
+	fontfamilys:
+		h1 >> 'Playwrite México Guides'
+		h2 >> Lemonada
+		h3 >>  'Libertinus Keyboard' 
+		a >> warnes
+		all >> Rakkas
+	*/
+}
+
+*::selection{
+    color: var(--top-screen-color-font);
+    background-color: #ffffff;
+}
+
+.top{
+    background-color: var(--top-screen-color);
+    color: var(--top-screen-color-font);
+    border-radius: 2rem;
+}
+h1{font-family: 'Playwrite México Guides';}h4{font-family: 'Libertinus Keyboard';}
+
+html{
+	background-color: var(--bacground-color);
+	color: var(--font-color);
+	font-family: Rakkas;
+}
+
+a{
+	color: var(--font-color);
+	text-decoration: none;
+	transition: all 0.5s ease-in 0.1s;
+    font-family: warnes;
+}
+
+h1,h4{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+a:hover{
+	color: #f80000;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0%;
+	margin-top: 50px;
+	width: 100%;
+	background-color: #111111;
+	margin: 0;
+	padding: 0;
+	border-top-left-radius: 3rem;
+	border-top-right-radius: 3rem;
+	text-align: center;
+	font-size: large;
+    z-index: 1000;
+}
+
+.photo{
+    background-color: #111111;
+    border-radius: 2rem;
+    height: 25vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 997;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+.photo:hover{
+    cursor: pointer;
+    border-radius: 3rem;
+    filter: brightness(30%)blur(3px);
+}
+
+.Game>a{
+    position: absolute;
+    z-index: 995;
+    transition: all 1s ease-in 0.2s;
+}
+.photo:hover ~ a{
+    z-index: 999;
+}
+.g1>.photo{background-image: url(GOW1.jpeg);}
+.g2>.photo{background-image: url(GOW2.jpeg);}
+.g3>.photo{background-image: url(GOW3.jpeg);}
+.g4>.photo{background-image: url(GOWGhostOfSparta.jpeg);}
+.g5>.photo{background-image: url(GOWChineOfOlympis.jpeg);}
+.g6>.photo{background-image: url(GOW2018.jpeg);}
+.g7>.photo{background-image: url(GOWRagnarok.jpeg);}
+.g8>.photo{background-image: url(GTAIV.jpeg);}
+.g9>.photo{background-image: url(GTAV.jpeg);}
+.g10>.photo{background-image: url(GTASAN.jpeg);}
+.g11>.photo{background-image: url(PS2025.jpeg);}
+.g12>.photo{background-image: url(FC2025.jpeg);}
+.g13>.photo{background-image: url(pubg.jpeg);}
+.g14>.photo{background-image: url(FreeFire.jpeg);}
+.g15>.photo{background-image: url(COD1.jpeg);}
+.g16>.photo{background-image: url(CODwwi.jpeg);}
+.g17>.photo{background-image: url(NFSHeat.jpeg);}
+.g18>.photo{background-image: url(minecraft.png);}
+.g19>.photo{background-image: url(Granny1.jpeg);}
+.g20>.photo{background-image: url(Granny2.jpeg);}
+.g21>.photo{background-image: url(Granny3.jpeg);}
+.g22>.photo{background-image: url(GTAViceCity.jpeg);}
+.g23>.photo{background-image: url(GTAVI.jpeg);}
+.g24>.photo{background-image: url(NFCpb.jpeg);}
+.g25>.photo{background-image: url(NFCMW.jpeg);}
+.g26>.photo{background-image: url(NFC.jpeg);}
+
+.Game{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 12.5%;
+    margin-left: 15px;
+}
+
+@media (max-width:700px){
+    h1{font-size: medium;}h4{font-size: x-small;}
+    .Game{margin-top:20px; height: 30vh; width: 90%;padding: 0;}
+    .photo{
+        height: 30vh;
+        width: 100%;
+        filter: brightness(20%);
+    }
+    .Game>a{z-index: 999;color: red;}
+}
