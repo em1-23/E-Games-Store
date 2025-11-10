@@ -133,5 +133,5 @@ a:hover{
         height: 30vh;
         width: 100%;
     }
-    .Game>a{z-index: 999;color: red;}
+    .Game>a{color: red;}
 }
